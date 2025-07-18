@@ -4,30 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informacion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/style.css">
 </head>
 <body id="body">
 
 <!-- EJE 1: ENCABEZADO Y TITULO-->
-<header id="header">
-    <nav id="navar-header">
-        <div class="nav-left">
-        <form action="#">
-        <input class="input__button--buscar" type="submit" value="Buscar"></form>
-        </div>
-                <ul class="menu-navar__header">
-                    <a href="../Index.html">Inicio</a>
-                    <a href="#">Informacion</a>
-                    <a href="Compañia.html">Compañia</a>
-                    <a href="Alumnos.html">Alumnos</a>
-                    <a href="Registrate.html">Registrate</a>
-                </ul> 
-        <div class="nav-right">
-        <form action="#">
-        <input class="input__button--soyalumno" type="submit" value="Soy Alumno"></form>
-        </div>
-    </nav>
+<header>
+          <div class="position-fixed">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <!-- Logo a la izquierda -->
+      <a class="navbar-brand me-5" href="#">LOGO</a>
+
+      <!-- Menú centrado -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Informacion</a></li>
+          <li class="nav-item"><a class="nav-link" href="Compañia.html">Compañia</a></li>
+          <li class="nav-item"><a class="nav-link" href="Alumnos.html">Alumnos</a></li>
+          <li class="nav-item"><a class="nav-link" href="Registrate.html">Registrate</a></li>
+        </ul>
+      </div>
+
+      <!-- Buscar + Soy Alumno a la derecha -->
+      <div class="d-flex align-items-center gap-2">
+        <form class="d-flex" role="search">
+          <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-success btn-sm" type="submit">Buscar</button>
+        </form>
+      </div>
+
+      <!-- Botón hamburguesa para móviles -->
+      <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    </div>
+  </nav>
 </header>
+
 
 <main id="main">
 <section class="info-section">
@@ -54,5 +73,27 @@
 </section>
 </div>
 </main>
+
+   <!-- EJE 3: PIE DE PAGINA / FOOTER -->
+
+<footer id="footer">
+    <div class="contenido-flex_footer">
+
+        <section class="footer-mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3053477871927!2d-58.55796962624312!3d-34.67224220127312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8826c3ae767%3A0x42f829cd48589f56!2sOpen%20Park%20San%20Justo!5e0!3m2!1ses!2sar!4v1748550883399!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="footer-pagina"></section>
+        <iframe src="https://plataforma-beta.coderhouse.com/" frameborder="0"></iframe>
+
+        <section class="footer-iconos">
+                <img  class="imagen-footer" src="../Icons/Instagram.webp" alt="">
+                <img  class="imagen-footer" src="../Icons/llamada.webp" alt="">
+                <img  class="imagen-footer" src="../Icons/WhatsApp.svg.webp" alt="">
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
