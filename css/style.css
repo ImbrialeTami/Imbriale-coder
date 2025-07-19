@@ -1,11 +1,5 @@
 #body{
     background-color: gray;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    max-width: 1200px;
-    padding: 0;
 }
 
 
@@ -200,6 +194,7 @@ strong{
 /* Contenedor de todos los videos */
 .videos-container {
     display: flex;
+    flex-direction:row;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
@@ -339,6 +334,7 @@ strong{
 
 .info-grid {
     display: flex;
+    flex-direction:column;
     justify-content: center;
     gap: 100px;
     margin-top: 100px;
@@ -348,7 +344,7 @@ strong{
 .info-card {
     width: 100%;
     text-align: left;
-    margin: 0 30px;
+    margin: 0 auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 20px;
@@ -431,6 +427,11 @@ a {
 
 
 /* Page registrate */
+
+.registrate-info_main{
+    display: flex;
+    flex-direction: column;
+}
 
 .formulario-container {
     width: 100%;
