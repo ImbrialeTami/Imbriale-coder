@@ -84,7 +84,8 @@
   width: 100vw;
   box-sizing: border-box;
 }
-#footer ´ .contenido-flex_footer {
+
+.contenido-flex_footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,12 +93,14 @@
   gap: 80px;
   flex-wrap: wrap;
 }
-#footer .imagen-footer {
+
+.imagen-footer {
   width: 60px;
   justify-content: center;
   align-items: center;
 }
-#footer .footer-iconos {
+
+.footer-iconos {
   display: flex;
   gap: 15px;
   margin-top: 0px;
