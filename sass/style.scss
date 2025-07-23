@@ -1,0 +1,14 @@
+// MÓDULO BASE
+@use "base/reset";
+
+// MÓDULOS lAYAUT 
+@use "layaut/header";
+@use "layaut/main";
+@use "layaut/footer";
+
+// MÓDULOS PAGES
+@use "pages/alumnos";
+@use "pages/compañia";
+@use "pages/index";
+@use "pages/informacion";
+@use "pages/registrate";

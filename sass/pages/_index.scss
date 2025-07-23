@@ -1,0 +1,82 @@
+.logo-principal_main{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.logo-imagen_main{
+    display: flex;
+    width: 300px; 
+    height: auto;
+    mix-blend-mode: multiply
+}
+
+.logo-texto_main{
+    white-space: nowrap;
+    position: absolute;
+    top: 45%; /* posición vertical al centro */
+    left: 50%; /* posición horizontal al centro */
+    transform: translate(-50%, -50%); /* centra exacto */
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #ececd2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.bienvenida-main{
+    padding-top: 10px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.instagram-main{
+    color: rgb(90, 140, 216);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: auto;
+    text-decoration:underline;
+    background-color: #ebebe1;
+}
+
+.contenido-flex_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: -10px; /* espacio entre texto e imagen */
+}
+
+.texto_main{
+    flex: 1;
+    font-size: 15px;
+}
+
+.toda-la-info-main{
+    font-size: 15px;
+}
+
+.img-power_main{
+    width: 450px;
+    mix-blend-mode: multiply;
+    height: auto;
+    float: right;
+    margin-left: 150px;  /* Más pegado al texto */
+    margin-right: 30px;   /* Para que se vaya bien a la derecha */
+}
+
+.div-informacion_main{
+    padding-top: 30px;
+    text-align: left;
+    margin: 100px;
+}
+
+span{
+    text-decoration: none;
+}
+strong{
+    color: rgb(220, 224, 236);
+}
+.strong1{
+    color: #000000;
+}

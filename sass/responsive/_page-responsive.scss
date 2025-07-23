@@ -1,0 +1,107 @@
+/* RESPONSIVE PARA PAGINA COMPAÑÍA */
+
+/* Responsive para TABLET */
+@media screen and (max-width: 1200px) {
+    #body {
+        background-color: #abbb73;
+        margin: 0 auto;
+        max-width: 95%; 
+    }
+
+    #main {
+        width: 100%; 
+        font-size: 23px; 
+        padding-top: 150px;
+        margin: 0 auto;
+    }
+
+    .videos-container {
+        justify-content: center; 
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .video-parrafo-1_main,
+    .video-parrafo-2_main,
+    .video-parrafo-3_main {
+        width: 30%;
+    }
+
+    .sabermas_footer {
+        font-size: 20px;
+        padding: 18px 40px;
+    }
+}
+
+
+/* Responsive para celulares */
+@media screen and (max-width: 900px) {
+    #body {
+        background-color: #726e6e;
+        margin: 30px; 
+    }
+
+    #main {
+        width: 100%;
+        font-size: 20px;
+        padding-top: 130px;
+        margin: 0;
+        text-align: left; 
+    }
+
+    .videos-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .video-parrafo-1_main,
+    .video-parrafo-2_main,
+    .video-parrafo-3_main {
+        width: 90%; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+#navar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+}
+
+    .menu-navar__header {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        background-color: yellow;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100vh;
+        padding-top: 60px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    .menu-toggle:checked ~ .menu-navar__header {
+        left: 0;
+        display: flex;
+    }
+
+    .input__button--buscar,
+    .input__button--soyalumno {
+        position: static;
+        margin-top: 10px;
+    }
+}
+
+

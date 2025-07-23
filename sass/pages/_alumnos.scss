@@ -1,0 +1,75 @@
+/* Page alumnos */
+
+.contenedor-principal {
+    display: grid;
+    gap: 10px;
+    margin: 50px;
+}
+
+.alumnos, .estudios {
+    background-color: #555;
+    padding: 30px 10px;
+    border: 1px solid yellow;
+}
+
+.alumnos h2, .estudios h2 {
+    text-align: center;
+    color: #e0e000;
+}
+
+.carrusel {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 30px;
+}
+
+.flecha {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.imagen {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: auto; /* Para permitir altura variable */
+    text-align: center;
+    padding: 5px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.imagen p {
+    margin: 0;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.grid-estudios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px 150px;
+}
+
+.grid-estudios .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,74 @@
+/* page compañia*/
+
+/* Contenedor de todos los videos */
+.videos-container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* Cada bloque video + descripción */
+.video-parrafo-1_main,
+.video-parrafo-2_main,
+.video-parrafo-3_main {
+    background-color: yellow;
+    color: black;
+    padding: 15px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Video */
+.video-1_main video,
+.video-2_main video,
+.video-3_main video {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* Descripción del video */
+.video-description {
+    font-size: 17px;
+}
+
+.titulos_main span {
+    color: white;
+    font-weight: 400;
+}
+
+
+.tus-tecnicas-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 200px;
+    margin-top: 50px;
+}
+
+.tus-tecnicas-main h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    margin: 0;
+}
+
+
+.sabermas {
+    margin-top: 80px;
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
