@@ -59,23 +59,22 @@
 
 #main {
   width: 100%;
-  max-width: 1200px;
   margin: 0;
   height: auto;
   padding-top: 100px;
   font-style: italic;
-  size: 100px;
   text-align: center;
   font-size: 25px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
 
 .titulos_main {
+  margin-top: 50px;
   color: white;
-  text-decoration: underline;
   margin-bottom: 30px;
   text-align: center;
   font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #footer {
@@ -367,12 +366,12 @@ strong {
   flex-direction: column;
   justify-content: center;
   gap: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
   flex-wrap: wrap;
 }
 
 .info-card {
-  width: 100%;
+  width: 70%;
   text-align: left;
   margin: 0 auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -385,6 +384,7 @@ strong {
 
 .info-card h3 {
   margin-bottom: 30px;
+  font-size: 25px;
 }
 
 .info-card img {
@@ -405,16 +405,17 @@ strong {
 }
 
 .red {
-  color: red;
+  color: yellow;
 }
 
 a {
-  color: #00aaff;
+  color: white;
   text-decoration: none;
 }
 
 .cta-section {
   background-color: yellow;
+  width: 100%;
   color: #333;
   text-align: center;
   padding: 60px 0;
@@ -424,7 +425,7 @@ a {
 
 .cta-section h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: underline;
 }
