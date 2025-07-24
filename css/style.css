@@ -6,7 +6,9 @@
 }
 
 #body {
-  background-color: gray;
+  background-color: black;
+  width: 100%;
+  overflow-x: hidden; /* ✅ para evitar el scroll horizontal */
 }
 
 .position-fixed {
@@ -33,6 +35,8 @@
   width: 100%;
   max-width: 1200px;
   gap: 400px;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 #nav-left,
@@ -56,11 +60,9 @@
 #main {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   height: auto;
-  padding-left: 20px;
   padding-top: 100px;
-  padding-right: 10px;
   font-style: italic;
   size: 100px;
   text-align: center;
@@ -69,7 +71,7 @@
 }
 
 .titulos_main {
-  color: black;
+  color: white;
   text-decoration: underline;
   margin-bottom: 30px;
   text-align: center;
@@ -245,56 +247,56 @@
   margin: 0;
 }
 
-.sabermas {
-  margin-top: 80px;
-  background-color: black;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.header_logo-principal {
+  width: 60px;
+  height: 60px;
 }
 
 .logo-principal_main {
   position: relative;
-  width: fit-content;
-  margin: auto;
+  width: 100vw;
+  height: auto;
+  margin: 0;
 }
 
 .logo-imagen_main {
-  display: flex;
-  width: 300px;
-  height: auto;
-  mix-blend-mode: multiply;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  mix-blend-mode: normal;
+  display: block;
+  z-index: 0;
 }
 
 .logo-texto_main {
   white-space: nowrap;
   position: absolute;
-  top: 45%; /* posición vertical al centro */
+  top: 40%; /* posición vertical al centro */
   left: 50%; /* posición horizontal al centro */
   transform: translate(-50%, -50%); /* centra exacto */
-  font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-  color: #ececd2;
+  font-family: serif;
+  font-size: 110px;
+  color: #f8f834;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-decoration: none;
+  z-index: 1;
 }
 
 .bienvenida-main {
-  padding-top: 10px;
+  padding-top: 50px;
   text-align: center;
-  color: rgb(0, 0, 0);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  font-family: sans-serif;
   font-size: 20px;
 }
 
 .instagram-main {
-  color: rgb(90, 140, 216);
+  color: white;
   font-family: "Times New Roman", Times, serif;
   margin-top: auto;
   text-decoration: underline;
-  background-color: #ebebe1;
+  background-color: yellow;
 }
 
 .contenido-flex_main {
@@ -314,18 +316,32 @@
 }
 
 .img-power_main {
-  width: 450px;
-  mix-blend-mode: multiply;
+  width: 500px;
   height: auto;
-  float: right;
-  margin-left: 150px; /* Más pegado al texto */
-  margin-right: 30px; /* Para que se vaya bien a la derecha */
+  margin: 0;
+  margin-top: -30px;
+  margin-left: 40px;
 }
 
 .div-informacion_main {
   padding-top: 30px;
   text-align: left;
   margin: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+}
+
+.sabermas {
+  background-color: yellow; /* Color de fondo */
+  color: black; /* Color del texto */
+  margin-top: 40px;
+  padding: 10px 20px; /* Espaciado interno */
+  border: none;
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor cambia al pasar el mouse */
+  font-size: 16px; /* Tamaño de fuente */
 }
 
 span {
@@ -337,7 +353,7 @@ strong {
 }
 
 .strong1 {
-  color: #000000;
+  color: yellow;
 }
 
 /* page informacion*/
@@ -455,15 +471,6 @@ a {
 .chek {
   font-size: 30px;
   margin-left: 10px;
-}
-
-.sabermas {
-  background-color: #000000; /* Color de fondo */
-  color: white; /* Color del texto */
-  padding: 20px 40px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cursor cambia al pasar el mouse */
-  font-size: 16px; /* Tamaño de fuente */
 }
 
 .entrenemosjuntos {
