@@ -474,4 +474,207 @@ a {
   margin: 30px;
 }
 
+/* MENÚ NORMAL VISIBLE EN ESCRITORIO */
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 35px;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+}
+
+/* MENÚ NORMAL EN ESCRITORIO */
+.menu-navar__header {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  padding: 0;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(233, 225, 225);
+  font-size: 28px;
+  margin-top: 15px;
+  position: relative;
+  left: 0;
+  background-color: transparent;
+}
+
+/* MENÚ EN CELULAR/TABLET */
+@media screen and (max-width: 900px) {
+  .menu-icon {
+    display: block;
+  }
+  .menu-navar__header {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: yellow;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  .menu-toggle:checked ~ .menu-navar__header {
+    display: flex;
+    left: 0;
+  }
+  .input__button--buscar,
+  .input__button--soyalumno {
+    position: static;
+    margin-top: 10px;
+  }
+}
+/* 📱 Responsive para CELULARES */
+@media screen and (max-width: 900px) {
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 40px;
+  }
+  .contenido-flex_footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  .footer-iconos {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .footer-mapa iframe,
+  .footer-pagina iframe {
+    width: 90vw !important;
+    height: 250px !important;
+  }
+  .imagen-footer {
+    width: 60px;
+  }
+}
+/* 💻 Responsive para TABLETS */
+@media screen and (max-width: 1200px) {
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 50px;
+  }
+  .contenido-flex_footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .footer-iconos {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer-mapa iframe,
+  .footer-pagina iframe {
+    width: 80vw !important;
+    height: 280px !important;
+  }
+  .imagen-footer {
+    width: 65px;
+  }
+}
+/* RESPONSIVE PARA PAGINA COMPAÑÍA */
+/* Responsive para TABLET */
+@media screen and (max-width: 1200px) {
+  #body {
+    background-color: #abbb73;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  #main {
+    width: 100%;
+    font-size: 23px;
+    padding-top: 150px;
+    margin: 0 auto;
+  }
+  .videos-container {
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+  }
+  .video-parrafo-1_main,
+  .video-parrafo-2_main,
+  .video-parrafo-3_main {
+    width: 30%;
+  }
+  .sabermas_footer {
+    font-size: 20px;
+    padding: 18px 40px;
+  }
+}
+/* Responsive para celulares */
+@media screen and (max-width: 900px) {
+  #body {
+    background-color: #726e6e;
+    margin: 30px;
+  }
+  #main {
+    width: 100%;
+    font-size: 20px;
+    padding-top: 130px;
+    margin: 0;
+    text-align: left;
+  }
+  .videos-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+  }
+  .video-parrafo-1_main,
+  .video-parrafo-2_main,
+  .video-parrafo-3_main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #navar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+  }
+  .menu-navar__header {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: yellow;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  .menu-toggle:checked ~ .menu-navar__header {
+    left: 0;
+    display: flex;
+  }
+  .input__button--buscar,
+  .input__button--soyalumno {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

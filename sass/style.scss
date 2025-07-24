@@ -12,3 +12,9 @@
 @use "pages/index";
 @use "pages/informacion";
 @use "pages/registrate";
+
+
+// MÓDULOS RESPONSIVE 
+@use "responsive/header-responsive";
+@use "responsive/footer-responsive";
+@use "responsive/page-responsive";
