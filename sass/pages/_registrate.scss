@@ -3,6 +3,8 @@
 .registrate-info_main{
     display: flex;
     flex-direction: column;
+    justify-content: center;  /* ✅ centra vertical */
+    align-items: center;      /* ✅ centra horizontal */
 }
 
 .formulario-container {
@@ -20,13 +22,36 @@
 .chek {
     font-size: 30px;
     margin-left: 10px;
+    color: yellow;
 }
 
 
 .entrenemosjuntos{
-    background-color: #ebebe1;
+    background-color: yellow;
 }
 
 .juntos-section{
-    margin: 30px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.trabajemosjuntos{
+margin-top: 20px;
+margin: 50px;
+justify-content: center;
+}
+
+.formulario-container{
+    background-color: #555;
+    max-width: 60%;
+    margin-left: 250px;
+    font-size: 15px;
+}
+
+.btn btn-primary{
+    background-color: yellow !important;
 }
