@@ -206,7 +206,7 @@
   width: calc(33.33% - 20px);
   box-sizing: border-box;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px #555;
 }
 
 /* Video */
@@ -221,6 +221,7 @@
 /* Descripción del video */
 .video-description {
   font-size: 17px;
+  color: black;
 }
 
 .titulos_main span {
@@ -235,7 +236,9 @@
   justify-content: center;
   text-align: center;
   padding-left: 200px;
-  margin-top: 50px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  color: white;
 }
 
 .tus-tecnicas-main h2 {
@@ -244,6 +247,7 @@
   text-overflow: ellipsis;
   font-size: 24px;
   margin: 0;
+  color: white;
 }
 
 .header_logo-principal {
@@ -335,7 +339,8 @@
 .sabermas {
   background-color: yellow; /* Color de fondo */
   color: black; /* Color del texto */
-  margin-top: 40px;
+  margin-top: 60px;
+  margin-bottom: 100px; /* margen hacia abajo */
   padding: 10px 20px; /* Espaciado interno */
   border: none;
   border-radius: 10px; /* Bordes redondeados */
@@ -598,7 +603,7 @@ a {
 /* Responsive para TABLET */
 @media screen and (max-width: 1200px) {
   #body {
-    background-color: #abbb73;
+    background-color: black;
     margin: 0 auto;
     max-width: 95%;
   }
@@ -626,7 +631,7 @@ a {
 /* Responsive para celulares */
 @media screen and (max-width: 900px) {
   #body {
-    background-color: #726e6e;
+    background-color: black;
     margin: 30px;
   }
   #main {
