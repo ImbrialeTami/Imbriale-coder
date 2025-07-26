@@ -1,0 +1,121 @@
+// RESPONSIVE PARA PAGINA REGISTRATE 
+
+
+// Responsive para TABLET 
+@media screen and (max-width: 900px) {
+    .trabajemosjuntos {
+        font-size: 2rem;
+    }
+
+    .juntos-section p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .formulario-container {
+        padding: 25px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    form .col-md-6,
+    form .col-md-4,
+    form .col-md-2,
+    form .col-12 {
+        width: 100%;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo-imagen_main {
+        height: auto; 
+        max-height: 400px; 
+        width: 100%; 
+    }
+}
+
+// Responsive para CELULARES 
+@media screen and (max-width: 600px) {
+    #main {
+        padding: 130px 10px 50px 10px; 
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .registrate-info_main {
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .formulario-container {
+        width: 100%;
+        padding: 20px 15px;
+        margin: 30px auto;
+        box-sizing: border-box;
+    }
+
+    .formulario-container form {
+        gap: 15px;
+    }
+
+    .trabajemosjuntos {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .juntos-section p {
+        font-size: 1rem;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .checkbox-label {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    form .col-md-6,
+    form .col-md-4,
+    form .col-md-2,
+    form .col-12 {
+        width: 100%;
+    }
+
+    .form-label {
+        font-size: 0.95rem;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+        font-size: 1rem;
+        padding: 14px;
+    }
+
+    .logo-imagen_main {
+        height: auto; 
+        max-height: 500px; 
+        width: 100%; 
+    }
+}

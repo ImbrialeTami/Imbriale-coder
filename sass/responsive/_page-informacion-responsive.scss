@@ -1,0 +1,80 @@
+// RESPONSIVE PARA PAGINA INFORMACION 
+
+// Responsive para PC 
+@media screen and (max-width: 1200px) {
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .info-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .info-card p {
+        font-size: 1.1rem;
+    }
+
+    .cta-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .cta-section p {
+        font-size: 1.2rem;
+    }
+}
+
+// Responsive para TABLET 
+@media screen and (max-width: 900px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .info-card {
+        padding: 15px;
+    }
+
+    .titulos_main {
+        font-size: 2.2rem;
+    }
+
+    .cta-section {
+        padding: 40px 10px;
+    }
+
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-section p {
+        font-size: 1.1rem;
+    }
+}
+
+// Responsive para CELULARES
+@media screen and (max-width: 600px) {
+    .titulos_main {
+        font-size: 1.8rem;
+    }
+
+    .info-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .info-card p {
+        font-size: 1rem;
+    }
+
+    .info-image {
+        margin-bottom: 10px;
+    }
+
+    .cta-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+}

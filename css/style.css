@@ -11,12 +11,15 @@
   overflow-x: hidden;
 }
 
-.position-fixed {
+#header {
   background-color: black;
+}
+
+.position-fixed {
   padding: 10px 20px;
   width: 100%;
   left: 0px;
-  font-size: 20px;
+  font-size: 15px;
   z-index: 1000; /* header por encima de todo */
 }
 
@@ -53,7 +56,7 @@
   justify-content: space-between;
   text-decoration: none;
   color: rgb(233, 225, 225);
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 5px;
 }
 
@@ -85,13 +88,14 @@
   align-items: center;
   width: 100vw;
   box-sizing: border-box;
+  margin-top: 150px;
 }
 
 .contenido-flex_footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 35px;
+  padding: 25px;
   gap: 80px;
   flex-wrap: wrap;
 }
@@ -114,7 +118,8 @@
 .contenedor-principal {
   display: grid;
   gap: 50px;
-  margin: 50px;
+  margin: 50px auto;
+  max-width: 80%;
 }
 
 .alumnos, .estudios {
@@ -341,7 +346,7 @@
   background-color: yellow; /* Color de fondo */
   color: black; /* Color del texto */
   margin-top: 60px;
-  margin-bottom: 100px; /* margen hacia abajo */
+  margin-bottom: 50px; /* margen hacia abajo */
   padding: 10px 20px; /* Espaciado interno */
   border: none;
   border-radius: 10px; /* Bordes redondeados */
@@ -467,14 +472,15 @@ a {
 
 .formulario-container {
   width: 100%;
-  margin: 0;
   margin-bottom: 50px;
   margin-top: -50px;
   background-color: #645f5f;
-  padding: 80px;
   border-radius: 10px;
   text-align: left;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 25px 20px;
+  margin: 30px auto;
+  box-sizing: border-box;
 }
 
 .chek {
@@ -500,6 +506,9 @@ a {
   margin-top: 20px;
   margin: 50px;
   justify-content: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .formulario-container {
@@ -625,8 +634,75 @@ a {
     width: 65px;
   }
 }
-/* RESPONSIVE PARA PAGINA COMPAÑÍA */
-/* Responsive para TABLET */
+@media screen and (max-width: 1200px) {
+  .grid-estudios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .alumnos .imagen {
+    width: 160px;
+  }
+  .titulos_main {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contenedor-principal {
+    padding: 20px;
+  }
+  .grid-estudios {
+    grid-template-columns: 1fr;
+  }
+  .titulos_main {
+    font-size: 2rem;
+  }
+  .alumnos .carrusel {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .alumnos .imagenes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .alumnos .imagen {
+    width: 140px;
+  }
+  .estudios h3 {
+    font-size: 1.5rem;
+  }
+  .grid-estudios .item {
+    font-size: 1rem;
+  }
+}
+@media screen and (width: 600px) {
+  .contenedor-principal {
+    padding: 10px;
+  }
+  .titulos_main {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .alumnos .imagen {
+    width: 100px;
+  }
+  .alumnos .imagen p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  .flecha {
+    font-size: 1.5rem;
+  }
+  .estudios h3 {
+    font-size: 1.3rem;
+  }
+  .grid-estudios {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .grid-estudios .item {
+    font-size: 0.95rem;
+    padding: 15px;
+  }
+}
 @media screen and (max-width: 1200px) {
   #body {
     background-color: black;
@@ -654,7 +730,6 @@ a {
     padding: 18px 40px;
   }
 }
-/* Responsive para celulares */
 @media screen and (max-width: 900px) {
   #body {
     background-color: black;
@@ -713,6 +788,220 @@ a {
   .input__button--soyalumno {
     position: static;
     margin-top: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .contenido-flex_main {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  .logo-imagen_main {
+    width: 400px;
+  }
+  .img-power_main {
+    width: 350px;
+  }
+  .texto_main {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .sabermas {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .logo-imagen_main {
+    width: 100%;
+    max-width: 300px;
+  }
+  .logo-texto_main {
+    font-size: 28px;
+  }
+  .bienvenida-main p {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  .contenido-flex_main {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .texto_main {
+    padding: 0 15px;
+    font-size: 16px;
+  }
+  .img-power_main {
+    width: 100%;
+    max-width: 280px;
+  }
+  .toda-la-info-main {
+    font-size: 16px;
+  }
+  .toda-la-info-main ul {
+    padding-left: 20px;
+  }
+  .sabermas {
+    width: 100%;
+    max-width: 250px;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .info-card h3 {
+    font-size: 1.6rem;
+  }
+  .info-card p {
+    font-size: 1.1rem;
+  }
+  .cta-section h2 {
+    font-size: 2.2rem;
+  }
+  .cta-section p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .info-card {
+    padding: 15px;
+  }
+  .titulos_main {
+    font-size: 2.2rem;
+  }
+  .cta-section {
+    padding: 40px 10px;
+  }
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+  .cta-section p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .titulos_main {
+    font-size: 1.8rem;
+  }
+  .info-card h3 {
+    font-size: 1.4rem;
+  }
+  .info-card p {
+    font-size: 1rem;
+  }
+  .info-image {
+    margin-bottom: 10px;
+  }
+  .cta-section h2 {
+    font-size: 1.7rem;
+  }
+  .cta-section p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .trabajemosjuntos {
+    font-size: 2rem;
+  }
+  .juntos-section p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .formulario-container {
+    padding: 25px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  form .col-md-6,
+  form .col-md-4,
+  form .col-md-2,
+  form .col-12 {
+    width: 100%;
+  }
+  .btn-primary {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-imagen_main {
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #main {
+    padding: 130px 10px 50px 10px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .registrate-info_main {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .formulario-container {
+    width: 100%;
+    padding: 20px 15px;
+    margin: 30px auto;
+    box-sizing: border-box;
+  }
+  .formulario-container form {
+    gap: 15px;
+  }
+  .trabajemosjuntos {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .juntos-section p {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .checkbox-label {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  form .col-md-6,
+  form .col-md-4,
+  form .col-md-2,
+  form .col-12 {
+    width: 100%;
+  }
+  .form-label {
+    font-size: 0.95rem;
+  }
+  .form-control,
+  .form-select {
+    font-size: 1rem;
+  }
+  .btn-primary {
+    width: 100%;
+    font-size: 1rem;
+    padding: 14px;
+  }
+  .logo-imagen_main {
+    height: auto;
+    max-height: 500px;
+    width: 100%;
   }
 }
 

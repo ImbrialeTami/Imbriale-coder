@@ -9,14 +9,15 @@
 
 .formulario-container {
     width: 100%;
-    margin: 0;
     margin-bottom: 50px;
     margin-top: -50px;
     background-color: #645f5f;
-    padding: 80px;
     border-radius: 10px;
     text-align: left;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 25px 20px;
+    margin: 30px auto;
+    box-sizing: border-box;
 }
 
 .chek {
@@ -40,10 +41,14 @@
 }
 
 .trabajemosjuntos{
-margin-top: 20px;
-margin: 50px;
-justify-content: center;
+    margin-top: 20px;
+    margin: 50px;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
+
 
 .formulario-container{
     background-color: #555;

@@ -1,0 +1,92 @@
+// RESPONSIVE PARA PAGINA ALUMNOS 
+
+// Responsive para PC 
+@media screen and (max-width: 1200px) {
+    .grid-estudios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .alumnos .imagen {
+        width: 160px;
+    }
+
+    .titulos_main {
+        font-size: 2.5rem;
+    }
+}
+
+// Responsive para TABLET 
+@media screen and (max-width: 900px) {
+    .contenedor-principal {
+        padding: 20px;
+    }
+
+    .grid-estudios {
+        grid-template-columns: 1fr;
+    }
+
+    .titulos_main {
+        font-size: 2rem;
+    }
+
+    .alumnos .carrusel {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .alumnos .imagenes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .alumnos .imagen {
+        width: 140px;
+    }
+
+    .estudios h3 {
+        font-size: 1.5rem;
+    }
+
+    .grid-estudios .item {
+        font-size: 1rem;
+    }
+}
+
+// Responsive para Celulares 
+@media screen and (width: 600px) {
+    .contenedor-principal {
+        padding: 10px;
+    }
+
+    .titulos_main {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .alumnos .imagen {
+        width: 100px;
+    }
+
+    .alumnos .imagen p {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    .flecha {
+        font-size: 1.5rem;
+    }
+
+    .estudios h3 {
+        font-size: 1.3rem;
+    }
+
+    .grid-estudios {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .grid-estudios .item {
+        font-size: 0.95rem;
+        padding: 15px;
+    }
+}
