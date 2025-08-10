@@ -9,7 +9,7 @@
     padding: 30px;
 }
 
- .logo-imagen_main {
+.logo-imagen_main {
     width: 400px;
 }
 
@@ -31,32 +31,32 @@
 @media (max-width: 600px) {
 .logo-imagen_main {
     width: 100%;
-    max-width: 300px;
+    height: auto;
 }
 
 .logo-texto_main {
     font-size: 28px;
 }
 
-.bienvenida-main p {
-    font-size: 16px;
-    padding: 0 15px;
+.bienvenida-main {
+    margin-top: 25px;
+    font-size: 14px;
+    padding: 0px 15px;
 }
 
 .contenido-flex_main {
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     gap: 20px;
 }
 
 .texto_main {
     padding: 0 15px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .img-power_main {
     width: 100%;
-    max-width: 280px;
 }
 
 .toda-la-info-main {
