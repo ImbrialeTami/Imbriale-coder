@@ -662,10 +662,17 @@ a {
   .alumnos .carrusel {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
   .alumnos .imagenes {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
+  }
+  .alumnos .imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
   .alumnos .imagen {
     width: 140px;
@@ -677,23 +684,49 @@ a {
     font-size: 1rem;
   }
 }
-@media screen and (width: 600px) {
+@media screen and (max-width: 600px) {
   .contenedor-principal {
-    padding: 10px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
   }
   .titulos_main {
     font-size: 1.6rem;
     text-align: center;
   }
+  .alumnos .imagenes {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 15px;
+    overflow-x: visible !important;
+    max-width: 100%;
+    margin: 0 auto;
+  }
   .alumnos .imagen {
-    width: 100px;
+    width: 100%;
+    max-width: 250px;
+  }
+  .alumnos .carrusel {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
   }
   .alumnos .imagen p {
     font-size: 0.9rem;
     margin-top: 5px;
-  }
-  .flecha {
-    font-size: 1.5rem;
+    text-align: center;
   }
   .estudios h3 {
     font-size: 1.3rem;
@@ -705,6 +738,14 @@ a {
   .grid-estudios .item {
     font-size: 0.95rem;
     padding: 15px;
+  }
+  .alumnos .imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .flecha {
+    display: none; /* ocultar flechas en móvil */
   }
 }
 @media screen and (max-width: 1200px) {
