@@ -6,29 +6,40 @@
     align-items: center;
     width: 100vw;
     box-sizing: border-box;
-    margin-top: 150px;
+    margin-top: 250px;
 }
 
 .contenido-flex_footer{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 15px;
-        gap: 80px;
+        gap: 20px;
         flex-wrap: wrap;
     }
 
+    .footer-mapa {
+        margin-bottom: 70px;
+
+    }
+
+
     .imagen-footer{
-        width: 40px;
+        width: 50px;
         justify-content:center;
         align-items: center;
     }
     .footer-iconos{
         display: flex;
-        gap: 10px;
         margin-top: 0px;
         cursor: pointer;
         justify-content: center;
+        align-items: center;
+        gap: 25px
     }
 
-
+    .texto-descritivo_footer {
+        color: yellow;
+        font-size: 15px;
+    }
